@@ -1,0 +1,6 @@
+.backgraoundPhotos{
+    background: url(../public/photos/sectionBackgaraound.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
