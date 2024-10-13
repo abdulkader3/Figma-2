@@ -9,6 +9,9 @@ export default {
       'montserrat': ["Montserrat", 'sans-serif']
     },
     extend: {},
+    container: {
+      'center' : true,
+    }
   },
   plugins: [],
 }

@@ -8,15 +8,15 @@ import { LuShield } from "react-icons/lu";
 const Home = () => {
   return (
     <>
-      <div className="container flex flex-col items-center justify-center w-full h-full ">
-        <div className="main w-full h-full bg-[#0B153C] pl-[35px]  pt-[56px] ">
+      <div className="container flex flex-col items-center justify-center w-full h-full  ">
+        <div className="main w-full h-full bg-[#0B153C] pl-[35px]  pt-[50px] ">
           {/* navbar start */}
           <div className="navbar items-center justify-between flex">
             <div className="logo text-[18px] font-bold text-white font-montserrat ">
               <p>Vaccination.ng</p>
             </div>
             <div className="manuIcon w-[45px] h-[45px] flex bg-[#c4c4c470] mr-[35px] justify-center items-center rounded-md ">
-              <HiMiniBars3BottomRight className="text-[33px] text-white " />
+              <HiMiniBars3BottomRight className="text-[30px] text-white " />
             </div>
           </div>
           {/* navbar end */}
@@ -24,17 +24,17 @@ const Home = () => {
           {/* section one start */}
           <section className=" sectionOne w-full h-full mt-[32px]">
             <div className="sectionOneDivOne pr-[30px]">
-              <p className="text-[11px] font-montserrat font-bold text-[#17C2EC] ">
+              <p className="text-[12px] font-montserrat font-bold text-[#17C2EC] ">
                 Get Vaccinated. Boost your Immune System
               </p>
-              <p className="text-[22px] my-[20px] font-montserrat font-extrabold text-[#17C2EC] ">
+              <p className="text-[24px] my-[20px] font-montserrat font-extrabold text-[#17C2EC] ">
                 {" "}
                 <span className="text-white">
                   COVID-19 Vaccination Got Easier With,
                 </span>{" "}
                 Vaccination.ng
               </p>
-              <p className="text-[12px] font-montserrat font-bold text-[#fff] ">
+              <p className="text-[14px] font-montserrat font-bold text-[#fff] ">
                 Vaccination.ng will help you find the nearest centre for
                 vaccination, in all 36 states in Nigeria.
               </p>
@@ -45,10 +45,10 @@ const Home = () => {
           {/* section tow start */}
           <section className="sectionTowbutton mt-[40px] w-full pr-[35px]  text-[14px] font-bold font-montserrat ">
             <div className="w-full flex justify-between">
-              <button className="w-[120px] h-[45px]  rounded-[15px] hover:bg-[#17C2EC] text-white border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95 ">
+              <button className="w-[138px] h-[50px]  rounded-[15px] hover:bg-[#17C2EC] text-white border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95 ">
                 Get Vaccine
               </button>
-              <button className="w-[120px] h-[45px]  rounded-[15px] hover:bg-[#17C2EC] text-white border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95 ">
+              <button className="w-[138px] h-[50px]  rounded-[15px] hover:bg-[#17C2EC] text-white border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95 ">
                 Help Centre
               </button>
             </div>
@@ -61,78 +61,79 @@ const Home = () => {
 
           {/* section three start */}
           <section className="w-full full sectionThree mt-[49px] flex flex-col">
-            <div className="sectionThreetext w-full text-white flex gap-5 text-[14px] font-montserrat font-bold items-center ">
+            <div className="sectionThreetext w-full text-white flex gap-[10px] text-[14px] font-montserrat font-bold items-center ">
               <div className="manuIcon w-[30px] h-[30px] flex bg-[#c4c4c470] justify-center items-center rounded-md ">
                 <FaRegClock className="text-[20px] text-[#17C2EC]" />
               </div>
-              <p>Schedule your Vaccination</p>
+              <p className="text-[14px]">Schedule your Vaccination</p>
             </div>
 
-            <div className=" relative w-[250px] h-[270px] mt-5 ">
-              <div className="w-[250px] h-[242px] bg-[rgba(196,196,196,0.05)] sectionThreeDiv rounded-tr-[20px] rounded-tl-[20px] "></div>
-              <div className="w-[250px] h-full bottom-0 bg-[rgba(196,196,196,0.1)] rounded-tr-[20px] rounded-tl-[20px] absolute sectionThreeDiv  ">
-               
-              
-              
-                <div className="w-full flex mt-[24px] ml-[10px] items-center gap-[10px] ">
+            <div className=" relative w-[305px] flex items-end h-[242px] mt-5 ">
+              <div className="w-[305px] top-0 h-[242px] bg-[rgba(196,196,196,0.05)] sectionThreeDiv rounded-tr-[20px] absolute rounded-tl-[20px] "></div>
+              <div className="w-[305px] h-[231px] bottom-0 bg-[rgba(196,196,196,0.1)] rounded-tr-[20px] rounded-tl-[20px]  sectionThreeDiv  ">
+                <div className="flex flex-col ml-[10px] gap-[15px]">
+                  {/* =========== */}
+                  <div className="w-full flex  items-center gap-[10px] mt-5 ">
+                    <div className="icon">
+                      <div className="manuIcon w-[30px] h-[30px] flex bg-[rgba(196,196,196,0.1)] justify-center items-center rounded-md ">
+                        <FaLocationDot className="text-[20px] text-[#17C2EC]" />
+                      </div>
+                    </div>
 
-                  <div className="icon">
-                    <div className="manuIcon w-[30px] h-[30px] flex bg-[rgba(196,196,196,0.1)] justify-center items-center rounded-md ">
-                      <FaLocationDot className="text-[20px] text-[#17C2EC]" />
+                    <div className="text ">
+                      <p className="text-[13px] font-semibold font-montserrat text-[rgba(255,255,255,0.5)] ">
+                        Location
+                      </p>
+                      <p className="text-[13px] font-semibold font-montserrat text-[#fff] ">
+                        Ikeja Lagos, Nigeria
+                      </p>
                     </div>
                   </div>
 
-                  <div className="text ">
-                    <p className="text-[13px] font-semibold font-montserrat text-[rgba(255,255,255,0.5)] ">Location</p>
-                    <p className="text-[13px] font-semibold font-montserrat text-[#fff] ">Ikeja Lagos, Nigeria</p>
-                   
-                  </div>
-                </div>
+                  <div className="w-full flex items-center gap-[10px] ">
+                    <div className="icon">
+                      <div className="manuIcon w-[30px] h-[30px] flex bg-[rgba(196,196,196,0.1)] justify-center items-center rounded-md ">
+                        <BsCalendar2Date className="text-[20px] text-[#17C2EC]" />
+                      </div>
+                    </div>
 
-
-
-                <div className="w-full flex mt-[24px] ml-[10px] items-center gap-[10px] ">
-
-                  <div className="icon">
-                    <div className="manuIcon w-[30px] h-[30px] flex bg-[rgba(196,196,196,0.1)] justify-center items-center rounded-md ">
-                      <BsCalendar2Date className="text-[20px] text-[#17C2EC]" />
+                    <div className="text ">
+                      <p className="text-[13px] font-semibold font-montserrat text-[rgba(255,255,255,0.5)] ">
+                        Date
+                      </p>
+                      <p className="text-[13px] font-semibold font-montserrat text-[#fff] ">
+                        29 February, 2022
+                      </p>
                     </div>
                   </div>
 
-                  <div className="text ">
-                    <p className="text-[13px] font-semibold font-montserrat text-[rgba(255,255,255,0.5)] ">Date</p>
-                    <p className="text-[13px] font-semibold font-montserrat text-[#fff] ">29 February, 2022</p>
-                   
-                  </div>
-                </div>
+                  <div className="w-full flex  items-center gap-[10px] ">
+                    <div className="icon">
+                      <div className="manuIcon w-[30px] h-[30px] flex bg-[rgba(196,196,196,0.1)] justify-center items-center rounded-md ">
+                        <LuShield className="text-[20px] text-[#17C2EC]" />
+                      </div>
+                    </div>
 
-
-
-                <div className="w-full flex mt-[24px] ml-[10px] items-center gap-[10px] ">
-
-                  <div className="icon">
-                    <div className="manuIcon w-[30px] h-[30px] flex bg-[rgba(196,196,196,0.1)] justify-center items-center rounded-md ">
-                      <LuShield className="text-[20px] text-[#17C2EC]" />
+                    <div className="text ">
+                      <p className="text-[13px] font-semibold font-montserrat text-[rgba(255,255,255,0.5)] ">
+                        Vaccine Type
+                      </p>
+                      <p className="text-[13px] font-semibold font-montserrat text-[#fff] ">
+                        Mordena
+                      </p>
                     </div>
                   </div>
-
-                  <div className="text ">
-                    <p className="text-[13px] font-semibold font-montserrat text-[rgba(255,255,255,0.5)] ">Vaccine Type</p>
-                    <p className="text-[13px] font-semibold font-montserrat text-[#fff] ">Mordena</p>
-                   
-                  </div>
+                  {/* ========= */}
                 </div>
 
                 <div className="w-full h-full">
-                <button className="w-[130px] ml-[13px] mt-5 h-[40px] text-[14px] font-montserrat font-bold   rounded-[8px] hover:bg-[#17C2EC] text-[#17C2EC] hover:text-[#fff] border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95 ">
-                Submit
-              </button>
+                  <button className="w-[150px] ml-[13px] mt-2 h-[50px] text-[14px] font-montserrat font-bold   rounded-[8px] hover:bg-[#17C2EC] text-[#17C2EC] hover:text-[#fff] border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95 ">
+                    Submit
+                  </button>
                 </div>
 
 
-
-
-
+                
               </div>
             </div>
           </section>
