@@ -1,0 +1,49 @@
+.main{
+    @apply w-full h-full bg-[#0B153C] pl-[35px]  pt-[50px] ;
+}
+
+.navbar{
+    @apply items-center justify-between flex
+}
+
+.logo{
+    @apply text-[18px] font-bold text-white font-montserrat
+}
+
+.manuIcon{
+    @apply w-[45px] h-[45px] flex bg-[#c4c4c470] mr-[35px] justify-center items-center rounded-md
+}
+
+.iconManuBar{
+    @apply   text-[30px] text-white 
+}
+
+.sectionOne{
+    @apply   w-full h-full mt-[32px]
+}
+
+.sectionOneDivOne{
+    @apply  pr-[30px]
+}
+
+.sectionOneDivOneTExt{
+    @apply   text-[12px] font-montserrat font-bold text-[#17C2EC]
+}
+
+.sectionOneDivOneTExt2{
+    @apply   text-[24px] my-[20px] font-montserrat font-extrabold text-[#17C2EC]
+}
+
+.sectionTowbutton{
+    @apply  mt-[40px] w-full pr-[35px]  text-[14px] font-bold font-montserrat
+}
+
+
+.buttonGH{
+    @apply  w-[138px] h-[50px]  rounded-[15px] hover:bg-[#17C2EC] text-white border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95
+}
+
+
+
+
+

@@ -4,30 +4,31 @@ import { FaRegClock } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { LuShield } from "react-icons/lu";
+import './Home.css'
 
 const Home = () => {
   return (
     <>
-      <div className="container flex flex-col items-center justify-center w-full h-full  ">
-        <div className="main w-full h-full bg-[#0B153C] pl-[35px]  pt-[50px] ">
+      <div className="">
+        <div className="main  ">
           {/* navbar start */}
-          <div className="navbar items-center justify-between flex">
-            <div className="logo text-[18px] font-bold text-white font-montserrat ">
+          <div className="navbar">
+            <div className="logo ">
               <p>Vaccination.ng</p>
             </div>
-            <div className="manuIcon w-[45px] h-[45px] flex bg-[#c4c4c470] mr-[35px] justify-center items-center rounded-md ">
-              <HiMiniBars3BottomRight className="text-[30px] text-white " />
+            <div className="manuIcon  ">
+              <HiMiniBars3BottomRight className=" iconManuBar" />
             </div>
           </div>
           {/* navbar end */}
 
           {/* section one start */}
-          <section className=" sectionOne w-full h-full mt-[32px]">
-            <div className="sectionOneDivOne pr-[30px]">
-              <p className="text-[12px] font-montserrat font-bold text-[#17C2EC] ">
+          <section className=" sectionOne ">
+            <div className="sectionOneDivOne ">
+              <p className=" sectionOneDivOneTExt  ">
                 Get Vaccinated. Boost your Immune System
               </p>
-              <p className="text-[24px] my-[20px] font-montserrat font-extrabold text-[#17C2EC] ">
+              <p className="sectionOneDivOneTExt2 ">
                 {" "}
                 <span className="text-white">
                   COVID-19 Vaccination Got Easier With,
@@ -43,12 +44,12 @@ const Home = () => {
           {/* section one end */}
 
           {/* section tow start */}
-          <section className="sectionTowbutton mt-[40px] w-full pr-[35px]  text-[14px] font-bold font-montserrat ">
+          <section className="sectionTowbutton ">
             <div className="w-full flex justify-between">
-              <button className="w-[138px] h-[50px]  rounded-[15px] hover:bg-[#17C2EC] text-white border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95 ">
+              <button className=" buttonGH ">
                 Get Vaccine
               </button>
-              <button className="w-[138px] h-[50px]  rounded-[15px] hover:bg-[#17C2EC] text-white border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95 ">
+              <button className=" buttonGH">
                 Help Centre
               </button>
             </div>
@@ -127,7 +128,7 @@ const Home = () => {
                 </div>
 
                 <div className="w-full h-full">
-                  <button className="w-[150px] ml-[13px] mt-2 h-[50px] text-[14px] font-montserrat font-bold   rounded-[8px] hover:bg-[#17C2EC] text-[#17C2EC] hover:text-[#fff] border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95 ">
+                  <button className="w-[150px] ml-[13px] mt-2 h-[50px] text-[14px] font-montserrat font-bold bg-[#17C2EC] rounded-[8px]  text-[#ffffff] hover:bg-transparent">
                     Submit
                   </button>
                 </div>
