@@ -1,5 +1,5 @@
 .main{
-    @apply w-full h-full bg-[#0B153C] pl-[35px]  pt-[50px] ;
+    @apply w-full h-full bg-[#0B153C] pl-[35px] md:pl-[50px]  pt-[50px] ;
 }
 
 .navbar{
@@ -31,7 +31,7 @@
 }
 
 .sectionOneDivOneTExt2{
-    @apply   text-[24px] my-[20px] font-montserrat font-extrabold text-[#17C2EC]
+    @apply   text-[24px] my-[20px] font-montserrat font-extrabold text-[#17C2EC] md:w-[414px]
 }
 
 .sectionTowbutton{
@@ -41,6 +41,18 @@
 
 .buttonGH{
     @apply  w-[138px] h-[50px]  rounded-[15px] hover:bg-[#17C2EC] text-white border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95
+}
+
+.sectionThreeDiv{
+    @apply w-[305px] md:w-[670px] top-0 h-[242px] bg-[rgba(196,196,196,0.05)] rounded-tr-[20px] absolute rounded-tl-[20px] 
+}
+
+.sectionThreeDiv2{
+    @apply w-[305px] md:w-[670px] h-[231px] bottom-0 bg-[rgba(196,196,196,0.1)] rounded-tr-[20px] rounded-tl-[20px]
+}
+
+.buttonSubmit{
+    @apply w-[150px] md:w-[253px] md:h-[64px] ml-[13px] mt-2 h-[50px] text-[14px] font-montserrat font-bold bg-[#17C2EC] rounded-[8px] text-[#ffffff] hover:bg-transparent transition-all hover:border-[#17C2EC] hover:border hover:text-[#17C2EC] hover:scale-95 active:scale-105
 }
 
 
