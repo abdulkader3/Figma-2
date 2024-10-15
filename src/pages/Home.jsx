@@ -15,50 +15,42 @@ const Home = () => {
     <>
       <div className="mainMain">
         <div className="main">
-
           {/* navbar start */}
           <div className="navbar">
-            <button className="logo ">
+            <div className="logo ">
               <p>Vaccination.ng</p>
-            </button>
-
-
-            <div className="manuIcon block lg:hidden">
-              <HiMiniBars3BottomRight className="iconManuBar" />
             </div>
 
-
-            <div className=" flex gap-[181px]">
-
-              <ul className="flex items-center gap-[25px] text-[rgba(255,255,255,0.5)] text-[24px] font-montserrat font-medium justify-start ">
-                <li>
-                  <Link to='#'>Home</Link>
-                </li>
-                <li>
-                  <Link to='#'>Services</Link>
-                </li>
-                <li>
-                  <Link to='#'>Schedule</Link>
-                </li>
-                <li>
-                  <Link to='#'>Contact us</Link>
-                </li>
-              </ul>
-
-              <button className="manuButton">
-
-              Check Status
-
-              </button>
+            <div className="block lg:hidden">
+              <div className="manuIcon">
+                <HiMiniBars3BottomRight className="iconManuBar" />
+              </div>
             </div>
 
+            <div className=" hidden lg:block">
+              <div className="">
+                <ul className="flex items-center gap-[25px] text-white text-[24px] font-montserrat font-medium justify-start ">
+                  <li>
+                    <Link to="#">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="#">Services</Link>
+                  </li>
+                  <li>
+                    <Link to="#">Schedule</Link>
+                  </li>
+                  <li>
+                    <Link to="#">Contact us</Link>
+                  </li>
+                </ul>
 
-            
+                <button className="manuButton"></button>
+              </div>
+            </div>
           </div>
           {/* navbar end */}
 
           <div className=" lg:flex lg:justify-between">
-
             <div className="">
               {/* section one start */}
               <section className="sectionOne">
@@ -89,7 +81,11 @@ const Home = () => {
               {/* section two start */}
               <section className="sectionTowbutton">
                 <div className="mt-[50px] lg:w-[622px] lg:h-[617px] photo w-full sectionTowphotos">
-                  <img className="lg:w-[622px] lg:h-[617px]" src="photos/coronaVacticen.png" alt="photos" />
+                  <img
+                    className="lg:w-[622px] lg:h-[617px]"
+                    src="photos/coronaVacticen.png"
+                    alt="photos"
+                  />
                 </div>
               </section>
               {/* section two end */}
@@ -102,98 +98,21 @@ const Home = () => {
               <div className="w-[30px] h-[30px] lg:w-[50px] lg:h-[50px] flex bg-[#c4c4c470] justify-center items-center rounded-md">
                 <FaRegClock className="text-[20px] text-[#17C2EC] lg:text-[30px] " />
               </div>
-              <p className="text-[14px] lg:text-[24px]">Schedule your Vaccination</p>
+              <p className="text-[14px] lg:text-[24px]">
+                Schedule your Vaccination
+              </p>
             </div>
 
-            <div className="relative w-[305px] md:w-[670px lg:w-[1299px] flex items-end h-[242px] lg:h-[160px] ">
+            <div className="relative w-[305px] md:w-[670px] lg:w-[1299px] flex items-end h-[242px] lg:h-[160px] ">
               <div className="sectionThreeDiv lg:h-[160px]"></div>
               <div className="sectionThreeDiv2 lg:h-[150px]">
                 <div className="flex flex-wrap ml-[10px] lg:ml-0 justify-evenly  gap-[15px] mt-5 lg:items-center ">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-                  {/* left side */}
-                  <div className=" md:flex md:flex-col gap-5 block lg:hidden">
-                    <IconWithText
-                      Icon={FaLocationDot}
-                      title="Location"
-                      subtitle="Ikeja Lagos, Nigeria"
-                      cssLocation='lg:w-[350px]'
-                    />
-                    <IconWithText
-                      Icon={BsCalendar2Date}
-                      title="Date"
-                      subtitle="29 February, 2022"
-                    />
-                  </div>
-                  {/* left side */}
-               
-               
-                 <div className=" hidden lg:block">
-                   {/* left side */}
-                   <div className="flex ">
-                    <IconWithText
-                      Icon={FaLocationDot}
-                      title="Location"
-                      subtitle="Ikeja Lagos, Nigeria"
-                    />
-                    <IconWithText
-                      Icon={BsCalendar2Date}
-                      title="Date"
-                      subtitle="29 February, 2022"
-                    />
-                  </div>
-                  {/* left side */}
-                 </div>
-
-
-
-
-
-                  {/* right side */}
-
-                  <div className=" md:flex md:flex-col  gap-5 block lg:hidden ">
-                    <IconWithText
-                      Icon={LuShield}
-                      title="Vaccine Type"
-                      subtitle="Mordena"
-                    />
-                    <div className="">
-                      <button className=" buttonSubmit ">Submit</button>
-                    </div>
-                  </div>
                   
+
                   
-                  <div className="  hidden lg:block">
-                    <div className="flex items-center gap-[136px] ">
-                    <div className="">
-                    <IconWithText
-                      Icon={LuShield}
-                      title="Vaccine Type"
-                      subtitle="Mordena"
-                    />
-                    </div>
-                    <div className="">
-                      <button className=" buttonSubmit ">Submit</button>
-                    </div>
-                    </div>
-                  </div>
                   {/* right side */}
-
-
-
-
                 </div>
               </div>
             </div>

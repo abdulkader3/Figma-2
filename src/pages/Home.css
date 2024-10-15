@@ -63,15 +63,15 @@
 
 
 .buttonGH{
-    @apply  w-[138px] h-[50px] lg:w-[200px]  rounded-[15px] hover:bg-[#17C2EC] text-white border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95
+    @apply  w-[138px] h-[50px] lg:w-[200px]   rounded-[15px] hover:bg-[#17C2EC] text-white border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95
 }
 
 .sectionThreeDiv{
-    @apply w-[305px] md:w-[670px] lg:w-[1299px] top-0 h-[242px] bg-[rgba(196,196,196,0.05)] rounded-tr-[20px] absolute rounded-tl-[20px] 
+    @apply w-[305px] md:w-[670px] lg:w-[1299px] h-[242px] bg-[rgba(196,196,196,0.05)] rounded-tr-[20px] rounded-tl-[20px] absolute top-0
 }
 
 .sectionThreeDiv2{
-    @apply w-[305px] md:w-[670px] lg:w-[1299px] h-[231px] bottom-0 bg-[rgba(196,196,196,0.1)] rounded-tr-[20px] rounded-tl-[20px]
+    @apply w-[305px] md:w-[670px] lg:w-[1299px] h-[231px] bg-[rgba(196,196,196,0.05)] rounded-tr-[20px] rounded-tl-[20px] 
 }
 
 .buttonSubmit{
