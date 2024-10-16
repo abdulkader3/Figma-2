@@ -34,7 +34,7 @@
 
 
 .manuButton{
-    @apply w-[219px] h-[69px] flex bg-[rgba(196,196,196,0.1)] mr-[35px] justify-center items-center rounded-[20px] text-[#17C2EC] text-[24px] font-bold font-montserrat
+    @apply w-[219px] h-[69px] flex bg-[rgba(196,196,196,0.1)] mr-[35px] justify-center items-center rounded-[20px] text-[#17C2EC] text-[24px] font-bold font-montserrat shadow-2xl
 }
 
 .iconManuBar{
@@ -67,15 +67,15 @@
 }
 
 .sectionThreeDiv{
-    @apply w-[305px] md:w-[670px] lg:w-[1299px] h-[242px] bg-[rgba(196,196,196,0.05)] rounded-tr-[20px] rounded-tl-[20px] absolute top-0
+    @apply w-[305px] md:w-[670px] lg:w-[1299px] h-[242px] bg-[rgba(196,196,196,0.05)] rounded-tr-[20px] rounded-tl-[20px] absolute top-0 z-0
 }
 
 .sectionThreeDiv2{
-    @apply w-[305px] md:w-[670px] lg:w-[1299px] h-[231px] bg-[rgba(196,196,196,0.05)] rounded-tr-[20px] rounded-tl-[20px] 
+    @apply w-[305px] md:w-[670px] lg:w-[1299px] h-[231px] bg-[rgba(196,196,196,0.05)] rounded-tr-[20px] rounded-tl-[20px] z-20
 }
 
 .buttonSubmit{
-    @apply w-[150px] md:w-[253px] lg:w-[142px] lg:rounded-[20px] md:h-[64px] ml-[13px] mt-2 h-[50px] text-[14px] font-montserrat font-bold bg-[#17C2EC] rounded-[8px] text-[#ffffff] hover:bg-transparent transition-all hover:border-[#17C2EC] hover:border hover:text-[#17C2EC] hover:scale-95 active:scale-105
+    @apply  w-[150px] lg:w-[142px] lg:h-[69px] h-[50px] bg-[#17C2EC] text-[14px] font-bold font-montserrat  rounded-[10px] hover:bg-[#17C2EC] bg-transparent border-[2px] border-[#17C2EC] hover:scale-95 active:scale-105 transition-all hover:text-white text-[#17C2EC] 
 }
 
 

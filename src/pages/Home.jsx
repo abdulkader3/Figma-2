@@ -1,5 +1,5 @@
 import React from "react";
-import { BsCalendar2Date } from "react-icons/bs";
+import { BsCalendar2Date, BsCalendarDateFill } from "react-icons/bs";
 import { FaRegClock } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
@@ -9,6 +9,7 @@ import IconWithText from "../Components/Home/IconWithText";
 import BrandLogo from "../Components/Home/BrandLogo";
 import From from "../Components/Home/From";
 import { Link } from "react-router-dom";
+import { IoShieldOutline } from "react-icons/io5";
 
 const Home = () => {
   return (
@@ -28,7 +29,7 @@ const Home = () => {
             </div>
 
             <div className=" hidden lg:block">
-              <div className="">
+              <div className=" flex gap-[181px]">
                 <ul className="flex items-center gap-[25px] text-white text-[24px] font-montserrat font-medium justify-start ">
                   <li>
                     <Link to="#">Home</Link>
@@ -44,7 +45,7 @@ const Home = () => {
                   </li>
                 </ul>
 
-                <button className="manuButton"></button>
+                <button className="manuButton">Check Status</button>
               </div>
             </div>
           </div>
@@ -106,25 +107,68 @@ const Home = () => {
             <div className="relative w-[305px] md:w-[670px] lg:w-[1299px] flex items-end h-[242px] lg:h-[160px] ">
               <div className="sectionThreeDiv lg:h-[160px]"></div>
               <div className="sectionThreeDiv2 lg:h-[150px]">
-                <div className="flex flex-wrap ml-[10px] lg:ml-0 justify-evenly  gap-[15px] mt-5 lg:items-center ">
 
-
-                  
-
-                  
-                  {/* right side */}
+                  {/* for mobile */}
+               <div className=" block md:hidden lg:hidden">
+                   <div className="flex flex-wrap ml-[10px] lg:ml-0  gap-[15px] mt-2 lg:items-center ">
+                      <IconWithText title="Location" subtitle="Ikeja Lagos, Nigeria" Icon={FaLocationDot} />
+                      <IconWithText title="Date" subtitle="29 February, 2022" Icon={BsCalendarDateFill} />
+                      <IconWithText title="Vaccine Type" subtitle="Mordena" Icon={IoShieldOutline} />
+                      <div className=" w-full ">
+                       <button className=" buttonSubmit"> Submit </button>
+                      </div>
+                    </div>
                 </div>
+
+
+                  {/* for tab */}
+               <div className=" md:block lg:hidden hidden">
+
+                   <div className="flex justify-between mt-[37px] pl-[11px] pr-[12px] ">
+
+                      <div className=" flex flex-col gap-[41px] ">
+                        <IconWithText title="Location" subtitle="Ikeja Lagos, Nigeria" Icon={FaLocationDot} />
+                        <IconWithText title="Vaccine Type" subtitle="Mordena" Icon={IoShieldOutline} />
+                      </div>
+
+                      <div className=" flex flex-col gap-[41px] ">
+                       <IconWithText title="Date" subtitle="29 February, 2022" Icon={BsCalendarDateFill} />
+                        <div className=" w-full ">
+                          <button className=" buttonSubmit"> Submit </button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+               
+                  {/* for desktop */}
+               <div className=" lg:block hidden">
+                   <div className="flex px-[39px] pt-[45px] ">
+                      <IconWithText title="Location" subtitle="Ikeja Lagos, Nigeria" Icon={FaLocationDot} />
+                      <IconWithText title="Date" subtitle="29 February, 2022" Icon={BsCalendarDateFill} />
+                      <IconWithText title="Vaccine Type" subtitle="Mordena" Icon={IoShieldOutline} />
+                      <div className="">
+                      <button className=" buttonSubmit"> Submit </button>
+                      </div> 
+                    </div>
+                </div>
+
               </div>
             </div>
           </section>
           {/* section three end */}
+   
         </div>
+
+
+
         {/* brand logo  */}
         <BrandLogo />
 
         <div className="Form">
           <From />
         </div>
+
+        
       </div>
     </>
   );
