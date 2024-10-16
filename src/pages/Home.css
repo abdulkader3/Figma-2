@@ -24,8 +24,42 @@
 }
 
 .manuIcon{
-    @apply w-[45px] h-[45px] flex bg-[#c4c4c470] mr-[35px] justify-center items-center rounded-md
+    @apply w-[45px] h-[45px] flex bg-[#c4c4c470] mr-[35px] justify-center items-center rounded-md relative
 }
+
+.mainNav ul li:hover a{
+    @apply text-[rgb(255,255,255)]
+}
+.mainNav ul li a{
+    @apply text-[rgba(255,255,255,0.5)]
+}
+
+.LogoButtomBar{
+    @apply w-0 h-[2px] bg-[#17C2EC] rounded-full duration-300
+}
+
+.logo:hover .LogoButtomBar{
+    @apply w-full
+}
+
+.slideerManu {
+    @apply w-full h-[100vh] absolute top-0 left-0;
+    backdrop-filter: blur(30px);
+    /* animation: slideShow 0.4s linear ;  */
+}
+
+/* @keyframes slideShow {
+    0% {
+        transform: translateY(-400px); 
+    }
+   
+    100% {
+        transform: translateY(0); 
+    }
+} */
+
+
+    
 
 .navbar ul li:hover{
     color: #ffffff;

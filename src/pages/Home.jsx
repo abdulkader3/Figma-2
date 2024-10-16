@@ -1,52 +1,56 @@
-import React from "react";
-import { BsCalendar2Date, BsCalendarDateFill } from "react-icons/bs";
+import React, { useState } from "react";
+import { BsCalendarDateFill } from "react-icons/bs";
 import { FaRegClock } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
-import { LuShield } from "react-icons/lu";
 import "./Home.css";
 import IconWithText from "../Components/Home/IconWithText";
 import BrandLogo from "../Components/Home/BrandLogo";
 import From from "../Components/Home/From";
-import { Link } from "react-router-dom";
 import { IoShieldOutline } from "react-icons/io5";
+import LgManu from "../Components/Home/LgManu";
+import { IoIosArrowBack } from "react-icons/io";
 
 const Home = () => {
+
+  // for manu button 
+  const [one , tow] = useState(true)
+
+  const show = ()=>{
+    tow(!one)
+  }
+
   return (
     <>
       <div className="mainMain">
         <div className="main">
           {/* navbar start */}
           <div className="navbar">
-            <div className="logo ">
+            <button className="logo ">
               <p>Vaccination.ng</p>
-            </div>
+              <div className=" LogoButtomBar "></div>
+            </button>
+            
 
             <div className="block lg:hidden">
-              <div className="manuIcon">
+              <div onClick={show} className="manuIcon">
                 <HiMiniBars3BottomRight className="iconManuBar" />
               </div>
+              {
+                  one ? <div className=" slideerManu translate-y-[-700px] duration-300">
+                  <LgManu ULcss='flex-col mt-[50px] items-end ' DivCss='flex-col pr-[30px]' buttonContent='< back' onclick={show} />
+                </div> : <div className=" slideerManu translate-y-0 duration-300">
+                <LgManu ULcss='flex-col mt-[50px] items-end ' DivCss='flex-col pr-[30px]' buttonContent='< back' onclick={show} />
+              </div>
+                }
+              
+
+
+
             </div>
 
             <div className=" hidden lg:block">
-              <div className=" flex gap-[181px]">
-                <ul className="flex items-center gap-[25px] text-white text-[24px] font-montserrat font-medium justify-start ">
-                  <li>
-                    <Link to="#">Home</Link>
-                  </li>
-                  <li>
-                    <Link to="#">Services</Link>
-                  </li>
-                  <li>
-                    <Link to="#">Schedule</Link>
-                  </li>
-                  <li>
-                    <Link to="#">Contact us</Link>
-                  </li>
-                </ul>
-
-                <button className="manuButton">Check Status</button>
-              </div>
+              <LgManu ULcss='items-center' buttonContent='Check Status'/>
             </div>
           </div>
           {/* navbar end */}
@@ -168,7 +172,7 @@ const Home = () => {
           <From />
         </div>
 
-        
+
       </div>
     </>
   );

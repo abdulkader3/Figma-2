@@ -17,17 +17,19 @@ const From = () => {
             {/* Using InputField component */}
             <InputField placeholder="Okeowo" />
             <InputField placeholder="NIK Number" />
-            <div className="w-full">
+            <div className="w-full flex justify-center">
               <button className="w-[130px] ml-[13px] mt-5 h-[40px] text-[14px] font-montserrat font-bold rounded-[8px] hover:bg-[#17C2EC] text-[#17C2EC] hover:text-[#fff] border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95">
                 Check
               </button>
             </div>
 
+            <div className="w-full mt-[48px]">
             <div className="w-[230px] h-[50px] bg-[rgba(196,196,196,0.05)] rounded-[10px] rounded-tr-[10px] mb-[21px] flex justify-center items-center">
               <p className="text-[10px] font-bold font-montserrat text-center text-[#17C2EC]">
                 Need a certificate for your COVID-19 result? Please click{" "}
                 <span className="underline">here</span>
               </p>
+            </div>
             </div>
           </div>
 
