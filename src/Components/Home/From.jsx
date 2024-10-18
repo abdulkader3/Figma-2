@@ -6,7 +6,7 @@ const From = () => {
     <>
       {/* independent section four start */}
       <section className="w-full h-auto backgraoundPhotos flex flex-col items-center">
-        <div className="w-[250px] md:w-[667px] lg:w-[1299px] lg:h-[341px] h-[381px] md:h-[482px] bg-[rgba(196,196,196,0.1)] rounded-[20px] mt-[84px] flex flex-col items-center lg:items-start ">
+        <div className="w-[250px] mb-[32px] md:mb-[57px] lg:mb-[63px] md:w-[667px] lg:w-[1299px] lg:h-[341px] h-[381px] md:h-[482px] bg-[rgba(196,196,196,0.1)] rounded-[20px] mt-[84px] flex flex-col items-center lg:items-start ">
           <div className="w-full lg:pl-[93px] h-[40px] md:h-[55px] bg-[rgba(196,196,196,0.05)] rounded-tl-[10px] rounded-tr-[10px] mb-[21px] flex justify-center lg:justify-start items-center">
             <p className="text-[10px] md:text-[20px] font-bold font-montserrat text-white">
               Check your COVID-19 result on our Database
@@ -33,7 +33,7 @@ const From = () => {
             </div>
           </div>
 
-          <div className=" md:block hidden lg:pl-[93px]">
+          <div className=" md:block hidden lg:pl-[93px] ">
             <div className=" w-[447px] lg:flex lg:gap-5 ">
               {/* Using InputField component */}
               <InputField

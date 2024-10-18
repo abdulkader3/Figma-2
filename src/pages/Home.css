@@ -112,6 +112,12 @@
     @apply  w-[150px] lg:w-[142px] lg:h-[69px] h-[50px] bg-[#17C2EC] text-[14px] font-bold font-montserrat  rounded-[10px] hover:bg-[#17C2EC] bg-transparent border-[2px] border-[#17C2EC] hover:scale-95 active:scale-105 transition-all hover:text-white text-[#17C2EC] 
 }
 
+.Mainimmune{
+    @apply w-full bg-[url(photos/bannerBg.png)] pl-[35px] pt-[42px] md:pl-[71px] md:pt-[58px] pr-[72px] lg:pt-[57px] pb-[42px] lg:pb-[80px] md:pb-[45px]  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
