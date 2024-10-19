@@ -14,6 +14,9 @@ import Immune from "../Components/Home/Immune";
 import COVIDVaccine from "../Components/Home/COVIDVaccine";
 import Patient from "../Components/Home/Patient";
 import Symptoms from "../Components/Home/Symptoms";
+import Feedback from "../Components/Home/Feedback";
+import Fotter from "../Components/Home/Fotter";
+import Quote from "../Components/Home/Quote";
 
 const Home = () => {
   // for manu button
@@ -41,7 +44,7 @@ const Home = () => {
               {one ? (
                 <div className=" slideerManu translate-y-[-1000px] duration-300">
                   <LgManu
-                    ULcss="flex-col mt-[50px] items-end "
+                    ULcss="flex-col mt-[50px] items-end text-[14px] md:text-[20px] lg:text-[24px] "
                     DivCss="flex-col pr-[30px]"
                     buttonContent="< back"
                     onclick={show}
@@ -50,7 +53,7 @@ const Home = () => {
               ) : (
                 <div className=" slideerManu translate-y-0 duration-300">
                   <LgManu
-                    ULcss="flex-col mt-[50px] items-end "
+                    ULcss="flex-col mt-[50px] items-end text-[14px] md:text-[20px] lg:text-[24px] "
                     DivCss="flex-col pr-[30px]"
                     buttonContent="< back"
                     onclick={show}
@@ -59,11 +62,13 @@ const Home = () => {
               )}
             </div>
             <div className=" hidden lg:block">
-              <LgManu ULcss="items-center" buttonContent="Check Status" />
+              <LgManu
+                ULcss="items-center text-[24px]"
+                buttonContent="Check Status"
+              />
             </div>
           </div>
           {/* navbar end */}
-
 
           <div className=" lg:flex lg:justify-between">
             <div className="">
@@ -108,7 +113,7 @@ const Home = () => {
           </div>
 
           {/* section three start */}
-          <section className="w-full full sectionThree mt-[49px] flex flex-col">
+          <section className="w-full full sectionThree mt-[49px] flex flex-col lg:pr-[71px]">
             <div className="sectionThreetext w-full text-white font-montserrat font-bold flex items-center gap-[10px] mb-5">
               <div className="w-[30px] h-[30px] lg:w-[50px] lg:h-[50px] flex bg-[#c4c4c470] justify-center items-center rounded-md">
                 <FaRegClock className="text-[20px] text-[#17C2EC] lg:text-[30px] " />
@@ -118,7 +123,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="relative w-[305px] md:w-[670px] lg:w-[1299px] flex items-end h-[242px] lg:h-[160px] ">
+            <div className="relative w-[305px] md:w-[670px] lg:w-[100%] flex items-end h-[242px] lg:h-[160px] ">
               <div className="sectionThreeDiv lg:h-[160px]"></div>
               <div className="sectionThreeDiv2 lg:h-[150px]">
                 {/* for mobile */}
@@ -205,7 +210,6 @@ const Home = () => {
 
         {/* brand logo  */}
         <BrandLogo />
-        
 
         {/* form */}
         <div className="Form">
@@ -213,30 +217,35 @@ const Home = () => {
         </div>
 
         {/* immune part */}
-        <Immune/>
+        <Immune />
         {/* immune part */}
 
         {/* COVID-19 Vaccine */}
-        <COVIDVaccine/>
+        <COVIDVaccine />
         {/* COVID-19 Vaccine */}
 
         {/* Patient */}
-        <Patient/>
+        <Patient />
         {/* Patient */}
 
         {/* Symptoms */}
-        <Symptoms/>
+        <Symptoms />
         {/* Symptoms */}
 
-        
+        {/* FEEDBACK */}
+        <Feedback />
+        {/* FEEDBACK */}
 
+        {/* input for email */}
+        <div className="quote ">
+          <Quote />
+        </div>
 
+        {/* fottar */}
 
+        <Fotter />
 
-
-
-
-
+        {/* fottar */}
       </div>
     </>
   );

@@ -1,51 +1,50 @@
-
-.main{ 
-    background: url(../../public/photos/bannerBg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.main {
+  background: url(../../public/photos/bannerBg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.Form{ 
-    background: url(../../public/photos/bannerBg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.main{
-    @apply w-full h-full bg-[#0B153C] pl-[35px] md:pl-[50px]  pt-[50px] ;
-}
-.navbar{
-    @apply items-center justify-between flex
+.Form {
+  background: url(../../public/photos/bannerBg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.logo{
-    @apply text-[18px] lg:text-[32px] md:text-[25px] font-bold text-white font-montserrat
+.main {
+  @apply w-full h-full bg-[#0B153C] pl-[35px] md:pl-[50px]  pt-[50px];
+}
+.navbar {
+  @apply items-center justify-between flex;
 }
 
-.manuIcon{
-    @apply w-[45px] h-[45px] flex bg-[#c4c4c470] mr-[35px] justify-center items-center rounded-md relative
+.logo {
+  @apply text-[18px] lg:text-[32px] md:text-[25px] font-bold text-white font-montserrat;
 }
 
-.mainNav ul li:hover a{
-    @apply text-[rgb(255,255,255)]
-}
-.mainNav ul li a{
-    @apply text-[rgba(255,255,255,0.5)]
+.manuIcon {
+  @apply w-[45px] h-[45px] flex bg-[#c4c4c470] mr-[35px] justify-center items-center rounded-md relative;
 }
 
-.LogoButtomBar{
-    @apply w-0 h-[2px] bg-[#17C2EC] rounded-full duration-300
+.mainNav ul li:hover a {
+  @apply text-[rgb(255,255,255)];
+}
+.mainNav ul li a {
+  @apply text-[rgba(255,255,255,0.5)];
 }
 
-.logo:hover .LogoButtomBar{
-    @apply w-full
+.LogoButtomBar {
+  @apply w-0 h-[2px] bg-[#17C2EC] rounded-full duration-300;
+}
+
+.logo:hover .LogoButtomBar {
+  @apply w-full;
 }
 
 .slideerManu {
-    @apply w-full h-[100vh] absolute top-0 left-0;
-    backdrop-filter: blur(30px);
-    /* animation: slideShow 0.4s linear ;  */
+  @apply w-full h-[100vh] absolute top-0 left-0;
+  backdrop-filter: blur(30px);
+  /* animation: slideShow 0.4s linear ;  */
 }
 
 /* @keyframes slideShow {
@@ -58,74 +57,86 @@
     }
 } */
 
-
-    
-
-.navbar ul li:hover{
-    color: #ffffff;
-    transition: all linear .1s;
+.navbar ul li:hover {
+  color: #ffffff;
+  transition: all linear 0.1s;
 }
 
-
-.manuButton{
-    @apply w-[219px] h-[69px] flex bg-[rgba(196,196,196,0.1)] mr-[35px] justify-center items-center rounded-[20px] text-[#17C2EC] text-[24px] font-bold font-montserrat shadow-2xl
+.manuButton {
+  @apply w-[219px] h-[69px] flex bg-[rgba(196,196,196,0.1)] mr-[35px] justify-center items-center rounded-[20px] text-[#17C2EC] text-[24px] font-bold font-montserrat shadow-2xl;
 }
 
-.iconManuBar{
-    @apply   text-[30px] text-white 
+.iconManuBar {
+  @apply text-[30px] text-white;
 }
 
-.sectionOne{
-    @apply   w-full h-full mt-[32px]
+.sectionOne {
+  @apply w-full h-full mt-[32px];
 }
 
-.sectionOneDivOne{
-    @apply  pr-[30px]
+.sectionOneDivOne {
+  @apply pr-[30px];
 }
 
-.sectionOneDivOneTExt{
-    @apply   text-[12px] font-montserrat font-bold text-[#17C2EC]
+.sectionOneDivOneTExt {
+  @apply text-[12px] font-montserrat font-bold text-[#17C2EC];
 }
 
-.sectionOneDivOneTExt2{
-    @apply   text-[24px] my-[20px] font-montserrat font-extrabold text-[#17C2EC] md:w-[414px]
+.sectionOneDivOneTExt2 {
+  @apply text-[24px] my-[20px] font-montserrat font-extrabold text-[#17C2EC] md:w-[414px];
 }
 
-.sectionTowbutton{
-    @apply  mt-[40px] w-full pr-[35px]  text-[14px] font-bold font-montserrat
+.sectionTowbutton {
+  @apply mt-[40px] w-full pr-[35px]  text-[14px] font-bold font-montserrat;
 }
 
-
-.buttonGH{
-    @apply  w-[138px] h-[50px] lg:w-[200px]   rounded-[15px] hover:bg-[#17C2EC] text-white border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95
+.buttonGH {
+  @apply w-[138px] h-[50px] lg:w-[200px]   rounded-[15px] hover:bg-[#17C2EC] text-white border-[2px] border-[#17C2EC] transition-all hover:scale-110 active:scale-95;
 }
 
-.sectionThreeDiv{
-    @apply w-[305px] md:w-[670px] lg:w-[1299px] h-[242px] bg-[rgba(196,196,196,0.05)] rounded-tr-[20px] rounded-tl-[20px] absolute top-0 z-0
+.sectionThreeDiv {
+  @apply w-[305px] md:w-[670px] lg:w-[100%] h-[242px] bg-[rgba(196,196,196,0.05)] rounded-tr-[20px] rounded-tl-[20px] absolute top-0 z-0;
 }
 
-.sectionThreeDiv2{
-    @apply w-[305px] md:w-[670px] lg:w-[1299px] h-[231px] bg-[rgba(196,196,196,0.05)] rounded-tr-[20px] rounded-tl-[20px] z-20
+.sectionThreeDiv2 {
+  @apply w-[305px] md:w-[670px] lg:w-[100%] h-[231px] bg-[rgba(196,196,196,0.05)] rounded-tr-[20px] rounded-tl-[20px] z-20;
 }
 
-.buttonSubmit{
-    @apply  w-[150px] lg:w-[142px] lg:h-[69px] h-[50px] bg-[#17C2EC] text-[14px] font-bold font-montserrat  rounded-[10px] hover:bg-[#17C2EC] bg-transparent border-[2px] border-[#17C2EC] hover:scale-95 active:scale-105 transition-all hover:text-white text-[#17C2EC] 
+.buttonSubmit {
+  @apply w-[150px] lg:w-[142px] lg:h-[69px] h-[50px] bg-[#17C2EC] text-[14px] font-bold font-montserrat  rounded-[10px] hover:bg-[#17C2EC] bg-transparent border-[2px] border-[#17C2EC] hover:scale-95 active:scale-105 transition-all hover:text-white text-[#17C2EC];
 }
 
-.Mainimmune{
-    @apply w-full bg-[url(photos/bannerBg.png)] pl-[35px] pt-[42px] md:pl-[71px] md:pt-[58px] pr-[72px] lg:pt-[57px] pb-[42px] lg:pb-[80px] md:pb-[45px]  ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.Mainimmune {
+  @apply w-full bg-[url(photos/bannerBg.png)] pl-[35px] pt-[42px] md:pl-[71px] md:pt-[58px] pr-[72px] lg:pt-[57px] pb-[42px] lg:pb-[80px] md:pb-[45px];
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.MainSymptoms{
-    @apply w-full h-[346px] md:h-[650px] lg:h-[982.71px] bg-[url(photos/Symptoms.png)] md:bg-[url(photos/SymptomsMD.png)] lg:bg-[url(photos/SymptomsLG.png)] ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.MainSymptoms {
+  @apply w-full h-[346px] md:h-[650px] lg:h-[982.71px] bg-[url(photos/Symptoms.png)] md:bg-[url(photos/SymptomsMD.png)] lg:bg-[url(photos/SymptomsLG.png)];
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.MainFEEDBACK {
+  @apply bg-[url(photos/feedback.png)] md:bg-[url(photos/feedbackMD.png)] lg:bg-[url(photos/feedbackLG.png)];
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
+.PatientsCard:hover .PatientsName {
+  @apply text-white;
+}
 
+.PatientsCard {
+  @apply w-[305px] md:w-[400px] md:h-[250px] h-[190.62px] bg-[rgba(196,196,196,0.5)] hover:bg-[#17C2EC] rounded-[13.55px] p-[22.88px] hover:text-[#fff] transition-all;
+}
 
-
+.fotter {
+  @apply w-full pb-[30.13px] md:pb-[50.55px] lg:pb-[128px] bg-[url(photos/bannerBg.png)] pt-[133px] md:pt-[270px] lg:pt-[328px] pl-[35px];
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

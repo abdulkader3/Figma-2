@@ -6,7 +6,7 @@ const LgManu = ({ULcss , DivCss , buttonCss , buttonContent , onclick}) => {
   return (
     <>
     <div className={` mainNav flex gap-[181px] ${DivCss} `}>
-                <ul className={`flex  gap-[25px] text-white text-[24px] font-montserrat font-medium ${ULcss} `}>
+                <ul className={`flex  gap-[25px] text-white  font-montserrat font-medium ${ULcss} `}>
                   <li>
                     <Link to="#">Home</Link>
                   </li>
