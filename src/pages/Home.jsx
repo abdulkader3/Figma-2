@@ -11,6 +11,9 @@ import { IoShieldOutline } from "react-icons/io5";
 import LgManu from "../Components/Home/LgManu";
 import { IoIosArrowBack } from "react-icons/io";
 import Immune from "../Components/Home/Immune";
+import COVIDVaccine from "../Components/Home/COVIDVaccine";
+import Patient from "../Components/Home/Patient";
+import Symptoms from "../Components/Home/Symptoms";
 
 const Home = () => {
   // for manu button
@@ -36,7 +39,7 @@ const Home = () => {
                 <HiMiniBars3BottomRight className="iconManuBar" />
               </div>
               {one ? (
-                <div className=" slideerManu translate-y-[-700px] duration-300">
+                <div className=" slideerManu translate-y-[-1000px] duration-300">
                   <LgManu
                     ULcss="flex-col mt-[50px] items-end "
                     DivCss="flex-col pr-[30px]"
@@ -212,6 +215,18 @@ const Home = () => {
         {/* immune part */}
         <Immune/>
         {/* immune part */}
+
+        {/* COVID-19 Vaccine */}
+        <COVIDVaccine/>
+        {/* COVID-19 Vaccine */}
+
+        {/* Patient */}
+        <Patient/>
+        {/* Patient */}
+
+        {/* Symptoms */}
+        <Symptoms/>
+        {/* Symptoms */}
 
         
 

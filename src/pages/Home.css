@@ -119,6 +119,13 @@
     background-size: cover;
 }
 
+.MainSymptoms{
+    @apply w-full h-[346px] md:h-[650px] lg:h-[982.71px] bg-[url(photos/Symptoms.png)] md:bg-[url(photos/SymptomsMD.png)] lg:bg-[url(photos/SymptomsLG.png)] ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 
 
 
